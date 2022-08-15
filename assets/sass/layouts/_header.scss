@@ -1,0 +1,13 @@
+@use "../abstracts/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: variables.$primary-light;
+  height: 9.6rem; // Used for sticky
+  padding: 0 4.8rem;
+}
+.logo {
+  height: 2.2rem;
+}

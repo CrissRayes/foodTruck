@@ -1,0 +1,38 @@
+@use "../abstracts/variables";
+
+.button {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 10px;
+
+    transition: all 0.3s;
+  }
+
+  &-cta:link,
+  &-cta:visited {
+    background-color: variables.$primary;
+    color: variables.$white;
+  }
+
+  &-cta:hover,
+  &-cta:active {
+    background-color: variables.$primary-dark;
+    color: variables.$white;
+  }
+  &-outline:link,
+  &-outline:visited {
+    background-color: variables.$white;
+    color: variables.$grey;
+  }
+
+  &-outline:hover,
+  &-outline:active {
+    background-color: variables.$primary-light;
+    box-shadow: 0 0 0 3px variables.$white;
+  }
+}
