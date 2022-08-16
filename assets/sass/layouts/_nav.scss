@@ -1,0 +1,40 @@
+@use "../abstracts/variables";
+
+.main-nav {
+  &-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  &-link:link,
+  &-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: variables.$grey-dark;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+
+  &-link:hover,
+  &-link:active {
+    color: variables.$primary;
+  }
+}
+
+.nav {
+  &-cta:link,
+  &-cta:visited {
+    border-radius: 9px;
+    padding: 1.2rem 2.4rem;
+    color: variables.$white;
+    background-color: variables.$primary;
+  }
+
+  &-cta:hover,
+  &-cta:active {
+    background-color: variables.$primary-dark;
+  }
+}

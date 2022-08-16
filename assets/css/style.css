@@ -132,3 +132,36 @@ body {
 .logo {
   height: 2.2rem;
 }
+
+.main-nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link, .main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.main-nav-link:hover, .main-nav-link:active {
+  color: #e67e22;
+}
+
+.nav-cta:link, .nav-cta:visited {
+  border-radius: 9px;
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #e67e22;
+}
+.nav-cta:hover, .nav-cta:active {
+  background-color: #cf711f;
+}
