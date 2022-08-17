@@ -1,0 +1,84 @@
+@use "../abstracts/variables";
+
+.section-meals {
+  padding: 9.6rem 0;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  }
+
+  &-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+
+  &-title {
+    font-size: 2.4rem;
+    color: variables.$grey-dark;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+  }
+
+  &-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &-attribute {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &-img {
+    width: 100%;
+  }
+
+  &-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    color: variables.$primary-dark;
+  }
+  &-tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+  }
+  &-tag {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 100px;
+    font-weight: 600;
+
+    &--red {
+      background-color: variables.$red;
+      color: variables.$white;
+    }
+
+    &--green {
+      background-color: variables.$green;
+      color: variables.$grey-dark;
+    }
+
+    &--blue {
+      background-color: variables.$blue;
+      color: variables.$white;
+    }
+    &--magenta {
+      background-color: variables.$magenta;
+      color: variables.$white;
+    }
+  }
+}
