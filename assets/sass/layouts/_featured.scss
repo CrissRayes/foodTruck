@@ -1,0 +1,16 @@
+.section-featured {
+  padding: 4.8rem 0;
+}
+
+.featured {
+  &-logos {
+    display: flex;
+    justify-content: space-around;
+
+    & img {
+      height: 10rem;
+      filter: grayscale(100%);
+      opacity: 50%;
+    }
+  }
+}
