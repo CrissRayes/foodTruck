@@ -1,6 +1,7 @@
 @use "../abstracts/variables";
 
 .button {
+  &,
   &:link,
   &:visited {
     display: inline-block;
@@ -10,6 +11,11 @@
     margin-right: 1.6rem;
     padding: 1.6rem 3.2rem;
     border-radius: 10px;
+
+    /* needed for .button*/
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 
     transition: all 0.3s;
   }

@@ -8,6 +8,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+          box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 
 html {
   font-size: 62.5%;
@@ -82,7 +87,7 @@ strong {
           align-items: center;
 }
 
-.button:link, .button:visited {
+.button, .button:link, .button:visited {
   display: inline-block;
   text-decoration: none;
   font-size: 2rem;
@@ -90,6 +95,10 @@ strong {
   margin-right: 1.6rem;
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
+  /* needed for .button*/
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -378,4 +387,115 @@ strong {
 .meal-tag--magenta {
   background-color: #8e44ad;
   color: #fff;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+.feature-title {
+  font-size: 2.4rem;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.grid-cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  -webkit-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cta {
+  height: 50rem;
+}
+.cta .heading-secondary {
+  margin-bottom: 3.2rem;
+  color: #45260a;
+}
+.cta .heading-secondary *:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+          box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.cta-img-box {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(235, 151, 78, 0.35)), to(rgba(230, 125, 34, 0.35))), url("/assets/img/eating.jpeg");
+  background-image: linear-gradient(to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35)), url("/assets/img/eating.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 3.2rem;
+     -moz-column-gap: 3.2rem;
+          column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input, .cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input::-webkit-input-placeholder, .cta-form select::-webkit-input-placeholder {
+  color: #aaa;
+}
+.cta-form input::-moz-placeholder, .cta-form select::-moz-placeholder {
+  color: #aaa;
+}
+.cta-form input:-ms-input-placeholder, .cta-form select:-ms-input-placeholder {
+  color: #aaa;
+}
+.cta-form input::-ms-input-placeholder, .cta-form select::-ms-input-placeholder {
+  color: #aaa;
+}
+.cta-form input::placeholder, .cta-form select::placeholder {
+  color: #aaa;
+}
+.cta-form button {
+  background-color: #45260a;
+  color: #fdf2e9;
+}
+.cta-form button:hover {
+  background-color: #fdf2e9;
+  color: #555555;
 }
