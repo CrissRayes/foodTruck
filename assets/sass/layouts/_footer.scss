@@ -1,5 +1,65 @@
 @use '../abstracts/variables';
 
 .footer {
-  padding: 9.6rem 0;
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+
+  &-logo-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+  }
+  &-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  &-link:link,
+  &-link:visited {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #767676;
+    transition: all 0.3s;
+  }
+
+  &-link:hover,
+  &-link:active {
+    color: #555;
+  }
+
+  &-social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+  &-social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  &-copyright {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+  }
+  &-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+
+  &-contacts {
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  &-address {
+    margin-bottom: 2.4rem;
+  }
 }

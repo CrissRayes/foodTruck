@@ -1,7 +1,7 @@
-@use "../abstracts/variables";
+@use '../abstracts/variables';
 
 .section-cta {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 12.8rem;
 }
 
 .grid-cta {
@@ -41,7 +41,7 @@
         rgba(235, 151, 78, 0.35),
         rgba(230, 125, 34, 0.35)
       ),
-      url("/assets/img/eating.jpeg");
+      url('/assets/img/eating.jpeg');
     background-size: cover;
     background-position: center;
   }
