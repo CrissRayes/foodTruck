@@ -1,14 +1,16 @@
-@use "base/base";
-@use "base/typography";
+@use 'base/base';
+@use 'base/typography';
+@use 'abstracts/variables';
 
-@use "layouts/grid";
-@use "components/buttons";
-@use "layouts/hero";
-@use "layouts/header";
-@use "layouts/nav";
-@use "layouts/how";
-@use "layouts/featured";
-@use "layouts/meals";
-@use "layouts/features";
-@use "layouts/cta";
-@use "abstracts/variables";
+@use 'components/buttons';
+
+@use 'layouts/grid';
+@use 'layouts/hero';
+@use 'layouts/header';
+@use 'layouts/nav';
+@use 'layouts/how';
+@use 'layouts/featured';
+@use 'layouts/meals';
+@use 'layouts/features';
+@use 'layouts/cta';
+@use 'layouts/footer';

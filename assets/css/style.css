@@ -59,34 +59,6 @@ strong {
   font-weight: 500;
 }
 
-.container {
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  -webkit-column-gap: 6.4rem;
-     -moz-column-gap: 6.4rem;
-          column-gap: 6.4rem;
-  gap: 9.6rem;
-}
-.grid-2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid-3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid-4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-.grid-center-v {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .button, .button:link, .button:visited {
   display: inline-block;
   text-decoration: none;
@@ -118,6 +90,37 @@ strong {
   background-color: #fdf2e9;
   -webkit-box-shadow: 0 0 0 3px #fff;
           box-shadow: 0 0 0 3px #fff;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  -webkit-column-gap: 6.4rem;
+     -moz-column-gap: 6.4rem;
+          column-gap: 6.4rem;
+  gap: 9.6rem;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-center-v {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-hero {
@@ -498,4 +501,8 @@ strong {
 .cta-form button:hover {
   background-color: #fdf2e9;
   color: #555555;
+}
+
+.footer {
+  padding: 9.6rem 0;
 }
